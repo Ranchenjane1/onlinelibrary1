@@ -1,0 +1,523 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+ul, ol, li {
+  list-style: none; }
+
+b, strong {
+  font-weight: normal; }
+
+em, i {
+  font-style: normal; }
+
+a, u {
+  text-decoration: none; }
+
+input {
+  outline: none; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  font-size: 0;
+  display: block;
+  visibility: hidden;
+  height: 0; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: #555;
+  outline: none; }
+
+header {
+  width: 100%;
+  height: 120px; }
+
+header img {
+  width: 100%;
+  height: 100%; }
+
+.channel_screen_wide {
+  width: 100%;
+  height: 26px;
+  background-color: #282c30; }
+
+.widget {
+  width: 1000px;
+  margin: 0 auto; }
+
+.main-menu {
+  height: 26px;
+  line-height: 26px;
+  overflow: hidden; }
+
+.main-menu li {
+  float: left;
+  text-align: center;
+  min-width: 100px;
+  width: auto !important; }
+
+.main-menu li a {
+  color: #fff;
+  font-size: 12px;
+  display: block; }
+
+.main-menu li a:hover {
+  background: #f60; }
+
+.nav {
+  width: 1000px;
+  margin: 0 auto; }
+
+.w1200px {
+  width: 1200px; }
+
+.con-box {
+  background: #fefefe; }
+
+.decoration {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px; }
+
+.decoration p {
+  font-size: 12px; }
+
+.w1200 .d_content .d_c_top .d_c_t_l {
+  float: left;
+  width: 380px; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w {
+  width: 100%; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .divw {
+  height: 380px;
+  width: 380px;
+  border: 1px solid #e5e5e5; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .divw a {
+  display: block; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .divw a .zoomPad {
+  width: 380px;
+  height: 380px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 2; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .divw a .zoomPad img {
+  width: 380px;
+  height: 380px; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .box_tab {
+  height: 60px;
+  margin: 17px 0 0 25px;
+  position: relative;
+  width: 350px;
+  float: left; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .box_tab .ul_w {
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+  width: 370px; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .box_tab .ul_w .als_wrapper {
+  position: relative; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .box_tab .ul_w .als_wrapper li {
+  float: left;
+  margin-right: 10px;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .box_tab .ul_w .als_wrapper li a {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .box_tab .ul_w .als_wrapper li a img {
+  width: 54px;
+  height: 54px;
+  box-sizing: border-box; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .box_tab .ul_w .als_wrapper .als_item {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  text-align: center; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .g_t_l_hd .btn {
+  background: url(http://ecimg.happigo.com/resource/web/images/detail_icon_list.png?v=1) no-repeat;
+  height: 25px;
+  position: absolute;
+  text-indent: -999em;
+  top: 20px;
+  width: 14px; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .g_t_l_hd .l {
+  background-position: 0 -373px;
+  left: -25px; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .tab_w .g_t_l_hd .r {
+  background-position: -20px -373px;
+  right: -10px; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .detail_share {
+  height: 40px;
+  overflow: hidden;
+  padding-top: 25px;
+  width: 100%; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .detail_share .d_bh {
+  display: block;
+  color: #999;
+  float: left; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .detail_share .detail_sc {
+  color: #8b8b8b;
+  float: left;
+  line-height: 16px;
+  padding-left: 23px;
+  padding-right: 10px;
+  font-size: 14px;
+  cursor: pointer; }
+
+.w1200 .d_content .d_c_top .d_c_t_l .detail_share .detail_sc .i_addsc {
+  background: url(http://ecimg.happigo.com/resource/web/images/detail_icon_list.png) no-repeat -30px -309px;
+  display: block;
+  float: left;
+  width: 17px;
+  height: 16px;
+  margin-right: 3px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r {
+  float: left;
+  margin-left: 30px;
+  width: 560px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_tit {
+  color: #303030;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2em;
+  padding-top: 10px;
+  overflow: hidden; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_tit .sp_hot {
+  font-size: 18px;
+  color: #303030; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_tit .sp_hot .em_l {
+  padding-right: 5px;
+  font-size: 18px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_tit .sp_hot .rm_r {
+  padding-left: 5px;
+  font-size: 18px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_tit_md {
+  font-size: 14px;
+  color: #c41f3a;
+  font-weight: normal;
+  margin-top: 15px;
+  line-height: 1.2em;
+  overflow: hidden; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .price_wrap {
+  width: 100%;
+  background: #fafafb;
+  margin-top: 10px;
+  border-bottom: 1px solid #f0dde1;
+  padding-bottom: 10px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .price_wrap .detail_price {
+  width: 520px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .price_wrap .detail_price .pop_tit {
+  color: #666;
+  float: left;
+  font-size: 14px;
+  min-height: 55px;
+  width: 75px;
+  padding-left: 10px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .price_wrap .detail_price .title1 {
+  margin-top: 28px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .price_wrap .detail_price .price_box {
+  float: left;
+  width: 420px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .price_wrap .detail_price .price_box .price_now {
+  font-family: arial;
+  font-size: 42px;
+  color: #c41f3a; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .price_wrap .detail_price .price_box .price_now .em_sign {
+  color: #c41f3a;
+  font-family: "华文细黑";
+  font-size: 18px;
+  font-weight: normal; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .price_wrap .detail_price .price_box del {
+  color: #999;
+  font-size: 14px;
+  padding: 0 18px 0 8px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_freight {
+  padding: 12px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #dcdcdc; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_freight .pop_tit {
+  color: #666;
+  float: left;
+  font-size: 14px;
+  min-width: 55px;
+  width: 75px;
+  padding-left: 10px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_freight .pop_black {
+  color: #333;
+  font-size: 14px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color {
+  position: relative; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .color_wrap {
+  line-height: 33px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0 0 0; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap .pop_tit {
+  color: #666;
+  float: left;
+  font-size: 14px;
+  min-width: 55px;
+  width: 75px;
+  padding-left: 10px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap .color_ul {
+  float: left;
+  width: 470px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap .color_ul li {
+  overflow: hidden;
+  min-width: 24px;
+  color: #333333;
+  border: 1px solid #c8c8c8;
+  float: left;
+  margin-right: 10px;
+  padding: 0 15px;
+  position: relative;
+  line-height: 30px;
+  height: 32px;
+  display: block;
+  text-align: center;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap .color_ul li a {
+  color: #404040; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap .color_ul li b {
+  background: url(http://ecimg.happigo.com/resource/web/images/detail_icon_list.png) no-repeat -87px 0;
+  bottom: 0;
+  display: block;
+  height: 13px;
+  position: absolute;
+  right: 0;
+  width: 12px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap .color_ul .on {
+  border: 2px solid #c41f3a;
+  line-height: 28px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .count_wrap {
+  height: 34px;
+  line-height: 34px;
+  padding-bottom: 20px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .count_wrap .wrap_input {
+  float: left;
+  position: relative; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .count_wrap .wrap_input .btn_reduce {
+  border: 1px solid #c8c8c8;
+  background: #fff;
+  float: left;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  color: #999;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .count_wrap .wrap_input .text {
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  border-left: 0px;
+  border-right: 0px;
+  float: left;
+  height: 30px;
+  text-align: center;
+  width: 60px;
+  line-height: 23px;
+  display: inline-block; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .count_wrap .wrap_input .btn_add {
+  border: 1px solid #c8c8c8;
+  background-color: #fff;
+  float: left;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  color: #999999;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap .model_in_stock p {
+  width: 100%;
+  overflow: hidden; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap .model_in_stock p .a_buy_now {
+  margin-left: 10px;
+  display: block;
+  float: left;
+  width: 136px;
+  height: 36px;
+  border: 2px solid #b51748;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  background-color: #b51748;
+  font-size: 16px; }
+
+.w1200 .d_content .d_c_top .d_c_t_r .detail_top .detail_color .model_wrap .model_in_stock p .a_add_car {
+  margin-left: 17px;
+  display: block;
+  float: left;
+  width: 136px;
+  height: 36px;
+  border: 2px solid #a82045;
+  color: #b51748;
+  text-align: center;
+  line-height: 36px;
+  font-size: 16px; }
+
+.w1200 .d_content .d_c_top .d_c_right {
+  width: 200px;
+  float: right; }
+
+.w1200 .d_content .d_c_top .d_c_right .detail_ewm {
+  width: 160px;
+  height: 191px;
+  margin-left: 20px;
+  text-align: center;
+  color: #444851;
+  background: url(http://ecimg.happigo.com/resource/web/images/detail_icon_list.png) no-repeat 0 -433px; }
+
+.w1200 .d_content .d_c_top .d_c_right .detail_ewm .ewm_bg_img {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 20px 0 6px 20px; }
+
+.w1200 .d_content .d_c_top .d_c_right .detail_ewm .ewm_bg_img img {
+  width: 100%;
+  margin-top: 20px; }
+
+.w1200 .d_content .d_c_top .d_c_right .detail_ewm .ewm_bg_img img .b_ewm_icon {
+  background: url(http://ecimg.happigo.com/resource/web/images/detail_icon_list.png) no-repeat scroll -173px -433px;
+  height: 69px;
+  left: 12px;
+  position: absolute;
+  top: -44px;
+  width: 105px; }
+
+.w1200 .d_content .d_c_top .d_c_right .detail_ewm .fs_14 {
+  font-size: 13px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 1.3em; }
+
+.w1200 .d_content .d_c_top .d_c_right .detail_ewm .fs_16 {
+  font-size: 13px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 1.3em; }

@@ -752,6 +752,9 @@ img {
   color: #3c3c3c;
   font-size: 12px; }
 
+.keyword:hover {
+  color: #f60; }
+
 .word_l {
   float: left;
   margin: 21px 25px;
@@ -1262,13 +1265,17 @@ img {
   line-height: 20px;
   background: #e6e6e6; }
 
+.numberbtn.active {
+  background: #f60;
+  color: #fff; }
+
 .bannerimg_bd {
   position: relative;
   height: 100%;
   z-index: 0; }
 
 .bannerimgtab {
-  width: 3800px;
+  width: 4560px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1338,7 +1345,7 @@ img {
   background: #fff; }
 
 .bannerimg_bottom_box {
-  width: 1480px;
+  width: 2220px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1538,7 +1545,7 @@ img {
   float: left;
   cursor: pointer; }
 
-.user_hd ul li.on {
+.user_hd ul li:hover {
   height: 39px;
   background: #fff;
   border-bottom: 1px solid #f64400;
@@ -1656,6 +1663,9 @@ img {
   line-height: 22px;
   overflow: hidden;
   float: left; }
+
+.market_item a:hover {
+  color: #f60; }
 
 .market_icon2 {
   background-position: -150px -368px; }
@@ -2021,6 +2031,12 @@ img {
   -webkit-transition: all 0.2s ease 0s;
   -o-transition: all 0.2s ease 0s; }
 
+.place_box_right ul li:hover .place_box_right_img img {
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1); }
+
 .place_box_right_text {
   height: 60px;
   padding: 0 10px;
@@ -2089,7 +2105,8 @@ img {
 .hotindustry_box {
   width: 1190px;
   height: 243px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .hotindustry_box ul {
   width: 1205px; }
@@ -2104,7 +2121,19 @@ img {
 .hotindustry_box ul li img {
   width: 226px;
   height: 240px;
-  display: block; }
+  display: block;
+  position: absolute; }
+
+.hotindustry_box ul li:hover img {
+  transition: All 0.3s ease-in-out;
+  -webkit-transition: All 0.3s ease-in-out;
+  -moz-transition: All 0.3s ease-in-out;
+  -o-transition: All 0.3s ease-in-out;
+  transform: translate(0, -5px);
+  -webkit-transform: translate(0, -5px);
+  -moz-transform: translate(0, -5px);
+  -o-transform: translate(0, -5px);
+  -ms-transform: translate(0, -5px); }
 
 .img_banner {
   width: 100%;
@@ -2215,6 +2244,13 @@ img {
   -moz-transition: All 0.4s ease-in-out;
   -o-transition: All 0.4s ease-in-out; }
 
+.foodimg img:hover {
+  transform: translate(-5px, 0);
+  -webkit-transform: translate(-5px, 0);
+  -moz-transform: translate(-5px, 0);
+  -o-transform: translate(-5px, 0);
+  -ms-transform: translate(-5px, 0); }
+
 .foodimg span {
   position: absolute;
   left: 20px;
@@ -2292,6 +2328,10 @@ img {
   position: absolute;
   left: 0;
   top: 0; }
+
+.trade_right_top:hover img, .trade_right_bottom:hover img {
+  left: -3px;
+  transition: 0.35s; }
 
 .trade_right_top_tit {
   width: 130px;
@@ -2459,14 +2499,15 @@ img {
   background: #fafafa; }
 
 .slideShow ul {
-  position: relative;
-  width: 1000px; }
+  position: absolute;
+  width: 678px;
+  overflow: hidden; }
 
 .slideShow li {
   width: 226px;
   height: 420px;
   float: left;
-  position: relative; }
+  position: absolute; }
 
 .store_item {
   width: 206px;
@@ -2600,6 +2641,10 @@ img {
   text-align: center;
   overflow: hidden; }
 
+.store_right_top:hover {
+  left: -4px;
+  transition: 0.35s; }
+
 .store_right_bottombox {
   width: 350px;
   height: 134px;
@@ -2614,6 +2659,10 @@ img {
   position: relative;
   overflow: hidden;
   float: left; }
+
+.store_right_bottom:hover {
+  left: -4px;
+  transition: 0.35s; }
 
 .store_right_bottom_img {
   width: 90px;
@@ -2698,6 +2747,12 @@ img {
   width: 100%;
   height: 100%;
   display: block; }
+
+.four_news_img img:hover {
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1); }
 
 .four_news_img span {
   width: 100%;
@@ -2841,6 +2896,13 @@ img {
   -moz-transition: All 0.4s ease-in-out;
   -o-transition: All 0.4s ease-in-out; }
 
+.goodproductbox li a:hover {
+  transform: translate(0, -5px);
+  -webkit-transform: translate(0, -5px);
+  -moz-transform: translate(0, -5px);
+  -o-transform: translate(0, -5px);
+  -ms-transform: translate(0, -5px); }
+
 .goodproductbox li img {
   width: 100%;
   height: 100%;
@@ -2882,6 +2944,17 @@ img {
   margin: 0 20px 20px 0;
   background: #fff;
   float: left; }
+
+.hotbotinner li:hover img {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s; }
 
 .hotbotinner li a {
   width: 222px;
@@ -2933,6 +3006,9 @@ img {
   background: url(../images/pic.png) no-repeat -48px -232px;
   z-index: 100; }
 
+.right_ad:hover {
+  background-position: -112px -232px; }
+
 .rightnav_zd {
   width: 61px;
   height: 30px;
@@ -2962,10 +3038,19 @@ img {
   display: block;
   background: url(../images/pic.png) no-repeat -48px -118px; }
 
+.topicon1:hover {
+  background: url(../images/pic.png) no-repeat -112px -118px; }
+
 .servicebox {
   width: 54px;
   height: 54px;
   background: url(../images/pic.png) no-repeat -48px -54px; }
+
+.right_service .servicebox:hover {
+  background: url(../images/pic.png) no-repeat -112px -54px; }
+
+.right_service:hover .right_pop {
+  right: 55px; }
 
 .right_ericon {
   position: fixed;
@@ -2980,6 +3065,12 @@ img {
   display: block;
   height: 54px;
   width: 54px; }
+
+.right_ericon a:hover {
+  background: url(../images/pic.png) no-repeat -547px -474px; }
+
+.right_ericon:hover .dpt_pop {
+  right: 55px; }
 
 .dpt_pop {
   padding: 12px 12px 3px;
@@ -3275,6 +3366,9 @@ img {
   font-size: 12px;
   text-decoration: none; }
 
+.web_nav a:hover {
+  color: #f60; }
+
 .link_box {
   height: auto;
   padding-top: 25px;
@@ -3309,7 +3403,11 @@ img {
 
 .link_tit li:hover {
   background: #eaeaea;
-  border-bottom: 2px solid #eaeaea; }
+  border-bottom: 2px solid #eaeaea;
+  color: #666; }
+
+.floorn_nav a:hover {
+  color: #f60; }
 
 .link_tit li a {
   color: #666;
@@ -3431,5 +3529,5 @@ img {
 .f_wa a:hover {
   color: #f60; }
 
-.floornav_boxinner a:hover {
+.link_text a:hover {
   color: #f60; }
