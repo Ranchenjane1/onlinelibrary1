@@ -31,11 +31,11 @@
 
 $.each($(".b_nav li"),function(index,item){
     // $(this).css("border","yellow").siblings().css("border","gray")
-    $(".b_nav li").on("mouseenter",index,function(event){
+    $(item).on("mouseenter",index,function(event){
        $($(".b_nav_float .text_content")[index]).css("display","block")
     //    .siblings().css("display","none")
     })
-    $(".b_nav li").on("mouseleave",index,function(event){
+    $(item).on("mouseleave",index,function(event){
         $($(".b_nav_float .text_content")[index]).css("display","none")
      //    .siblings().css("display","none")
      })
