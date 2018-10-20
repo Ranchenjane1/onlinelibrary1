@@ -421,13 +421,83 @@
    <p>商品精选</p>
 </div>
 </div>
-<div class="wrap">
+<div class="wrap" id="wrap">
     <ul>
      
     </ul>
 </div> 
+<div class="w1200" id="footer-2013">
+        <div class="links">
+            <a rel="nofollow" target="_blank" href="#">
+                关于我们
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="#">
+                联系我们
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="#">
+                人才招聘
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="#">
+                商家入驻
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="#">
+                广告服务
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="#">
+                手机界面
+            </a>
+            |
+            <a target="_blank" href="#">
+                友情链接
+            </a>
+            |
+            <a target="_blank" href="#">
+                销售联盟
+            </a>
+            |
+            <a href="#" target="_blank">
+                中国网库社区
+            </a>
+            |
+            <a href="#" target="_blank">
+                中国网库公益
+            </a>
+            |
+            <a target="_blank" href="#" clstag="pageclick|keycount|20150112ABD|9">English Site</a>
+        </div>
+        <div class="copyright">
+            Copyright&nbsp;©&nbsp;2004-2018&nbsp;&nbsp;中国网库99114.com&nbsp;版权所有
+        </div>
+    </div>
 <script src="script/jquery.js"></script>
+<script src="script/common.js"></script>
 <!-- <script src="script/waterfall.js"></script> -->
 <script src="script/waterfall2.js"></script>
+<script>
+var olist = document.getElementById("wrap");
+//事件委托：
+
+olist.onclick = function(event){
+    var imglist = document.querySelectorAll("#wrap img");
+    var imgArr = Array.from(imglist);
+        console.log(imgArr)
+    var e =event || window.event;
+    var target = e.target || e.srcElement;
+    if(imgArr.indexOf(target)!=-1){
+        // 页面跳转;
+        // 先要储存cookie;
+        cookie("id",target.getAttribute("data-id"))
+        console.log(cookie("id"))
+        location.href="detail.html"
+    }
+}
+
+
+</script>
 </body>
 </html>

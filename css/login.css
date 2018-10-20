@@ -258,6 +258,9 @@ a {
   padding-right: 20px;
   padding-left: 20px; }
 
+.userslogin:last-child {
+  display: none; }
+
 .user-input-wrap {
   position: relative;
   margin-top: 24px; }
@@ -591,3 +594,19 @@ a {
   font-size: 14px;
   text-align: center;
   display: block; }
+
+#footer-2013 {
+  padding: 30px 0;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  border-top: 1px solid #eee; }
+
+#footer-2013 .links a {
+  font-size: 12px;
+  margin: 100px 10px;
+  color: #999;
+  text-decoration: none; }
+
+.copyright {
+  margin-top: 10px; }

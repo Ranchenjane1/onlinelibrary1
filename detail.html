@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="images/top1.jpg" alt="">
+        <div class="head_img"></div>
     </header>
     <div class="channel_screen_wide">
         <div class="widget channel" id="channelBar">
@@ -18,31 +18,24 @@
                     <a href="#" title="首页">首页</a>
                 </li>
                 <li>
-                    <a href="#" title="公司介绍">公司介绍</a>
+                    <a href="#" title="全部商品">全部商品</a>
                 </li>               
                      <li>
-                            <a href="#" title="产品供应">产品供应</a>
+                            <a href="#">女装特卖</a>
                      </li>
-                     <li> <a href="#" title="公司资讯">公司资讯</a>
+                     <li> <a href="#">鞋包配专区</a>
                      </li>                
-                     <li> <a href="#" title="公司相册">公司相册</a>
+                     <li>  <a href="#" title="下装">下装</a>
                      </li>
-                     <li><a href="#" title="联系我们">联系我们</a>
+                     <li><a href="#" title="上装">上装</a>
                      </li>                
                      <li>
-                            <a href="#" title="资质档案">资质档案</a>
+                            <a href="#" title="支付帮助">支付帮助</a>
                      </li>
                 
                 </ul>
             </div>
      </div>
-     <div class="nav w1200" id="navBar">
-            <div class="con-box">
-               <div class="decoration">
-                  <p>当前位置：<a href="#">全国企业名录</a> &gt; <a href="list/area/101117128_1">恩施土家族苗族自治州企业名录</a> &gt; <a href="51411956">来凤金豆农业发展有限公司</a> &gt; <a href="51411956/pc">产品供应</a> &gt; 限时促销买一送一金豆奶油瓜蒌子 拍一件发2罐 每罐200克x2</p>
-               </div>
-            </div>
-         </div>
     <div class="w1200 clearfix">
             <div class="d_content">
                     <div class="d_c_top clearfix">
@@ -50,49 +43,22 @@
                             <div class="tab_w">
                                 <div class="divw clearfix">
                                     <a href="javascript:void(0)">
+                                        <div id="box1">
+                                            <div id="wrapbox"></div>
                                         <div class="zoomPad">
-                                            <img src="http://img1.99114.com/group3/M00/11/59/rBADvVpLUimAYFSpAADrgwBBOKk148_80_80.jpg" alt="">
+                                            <img id="smallimg"  src="" data-id="${i}" alt="">
                                         </div>
+                                        <div id="smallbox" class="smallbox"></div>
+                                    </div>
                                     </a>
-                                </div>
-                                <div class="box_tab">
-                                    <div class="ul_w">
-                                        <ul class="als_wrapper clearfix">
-                                            <li class="als_item">
-                                                <a href="javascript:void(0)">
-                                                    <img  src="http://img1.99114.com/group3/M00/11/59/rBADvVpLUimAYFSpAADrgwBBOKk148_80_80.jpg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="als_item">
-                                                <a href="javascript:void(0)">
-                                                    <img src="http://img2.99114.com/group3/M00/11/5D/rBADvFpLUimARqC8AACZHVxnSGI390_80_80.jpg"" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="als_item">
-                                                <a href="javascript:void(0)">
-                                                    <img src="" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="als_item">
-                                                <a href="javascript:void(0)">
-                                                    <img src="" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="als_item">
-                                                <a href="javascript:void(0)">
-                                                    <img src="" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="g_t_l_hd">
-                                        <a href="javascript:void(0)" class="btn l"></a>
-                                        <a href="javascript:void(0)" class="btn r"></a>
+                                    <div id="bigpic" class="bigpic">
+                                        <img id="bigimg" src="" alt="" >
                                     </div>
                                 </div>
+                                
                             </div>
                             <div class="detail_share">
-                                <div class="d_bh">编号:9242504</div>
+                                <div class="d_bh">编号:<span id="iid"></span></div>
                                 <div class="detail_sc">
                                     <i class="i_addsc"></i>
                                     收藏商品
@@ -101,25 +67,19 @@
                         </div>
                         <div class="d_c_t_r">
                             <div class="detail_top">
-                                <h1 class="detail_tit">
-                                    <span class="sp_hot">
-                                        <em class="em_l">[</em>
-                                        限时促销
-                                        <em class="rm_r">]</em>
-                                    </span>
-                                   买一送一金豆奶瓜蒌子 拍一件发2罐 每罐200克*2
+                                <h1 id="tit" class="detail_tit">
+                                  
                                 </h1>
-                                <h2 class="detail_tit_md">来自大山的神奇瓜子，瓜蒌子简称野葫芦籽，生产在北纬30度境内</h2>
+                                <h2 id="props" class="detail_tit_md"></h2>
                                 <div class="price_wrap">
                                     <div class="detail_price clearfix">
                                         <span class="pop_tit title1">快乐价</span>
                                         <div class="price_box">
-                                            <span class="price_now">
-                                                <em class="em_sign">￥</em>
-                                                699.00
+                                            <span id="nowprice" class="price_now">
+                                               
                                             </span>
-                                            <span>
-                                                <del>￥1399.00</del>
+                                            <span id="orgPrice" class="orgprice">
+                                                <del></del>
                                             </span>
                                         </div>
                                     </div>
@@ -181,5 +141,122 @@
                     </div>
                 </div>
     </div>
+    <div id="footer-2013">
+            <div class="links">
+                <a rel="nofollow" target="_blank" href="#">
+                    关于我们
+                </a>
+                |
+                <a rel="nofollow" target="_blank" href="#">
+                    联系我们
+                </a>
+                |
+                <a rel="nofollow" target="_blank" href="#">
+                    人才招聘
+                </a>
+                |
+                <a rel="nofollow" target="_blank" href="#">
+                    商家入驻
+                </a>
+                |
+                <a rel="nofollow" target="_blank" href="#">
+                    广告服务
+                </a>
+                |
+                <a rel="nofollow" target="_blank" href="#">
+                    手机界面
+                </a>
+                |
+                <a target="_blank" href="#">
+                    友情链接
+                </a>
+                |
+                <a target="_blank" href="#">
+                    销售联盟
+                </a>
+                |
+                <a href="#" target="_blank">
+                    中国网库社区
+                </a>
+                |
+                <a href="#" target="_blank">
+                    中国网库公益
+                </a>
+                |
+                <a target="_blank" href="#" clstag="pageclick|keycount|20150112ABD|9">English Site</a>
+            </div>
+            <div class="copyright">
+                Copyright&nbsp;©&nbsp;2004-2018&nbsp;&nbsp;中国网库99114.com&nbsp;版权所有
+            </div>
+        </div>
+    <script src="script/jquery.js"></script>
+    <script src="script/common.js"></script>
+    <script src="script/zoom.js"></script>
+    <script>
+   function WaterFall(){}
+$.extend(WaterFall.prototype,{
+    //初始化
+    init:function(){
+        //当前页数
+        this.page=1;
+        this.main = $("#wrap");
+        //判断是否在加载中
+        this.loading = false;
+        //和promise .then相似
+        this.loadJson()     //返回值是deferred对象（promise前身）
+            .done(function(res){
+                // deferred 的 done 回调 this指向的都是 jquery 对象本身
+                this.renderPage(res);
+            })
+    },
+    //加载数据
+    loadJson:function(){
+        var opt = {
+            url:"https://list.mogujie.com/search",
+            dataType:"jsonp",
+            data:{page:this.page},
+            context:this
+        }
+        return $.ajax(opt);
+    },
+    //渲染页面
+    renderPage:function(json1){
+        console.log(json1.result.wall.list);
+        var json=json1.result.wall.list;
+        // console.log(json,json[0].show.img)
+        var sBig=document.getElementById("bigimg")
+        var oimg = document.getElementById("smallimg");
+        // console.log(oimg)
+        var oTit = document.getElementById("tit");
+        var nowPrice = document.getElementById("nowprice");
+        var oOrgPrice = document.getElementById("orgPrice");
+        var oProps = document.getElementById("props");
+        var oIid = document.getElementById("iid");
+        
+        // var i="";
+        //判断cookie中是否有id
+        // var res="";
+        console.log(cookie("id"))
+        if(cookie("id")){
+            i=cookie("id");   //cookie("id")一个参数，是查找，返回value
+            console.log(i);
+            oimg.src = json[i].show.img;
+            oTit.innerHTML = json[i].title;
+            nowPrice.innerHTML = json[i].price;
+            oOrgPrice.innerHTML = json[i].orgPrice;
+            oProps.innerHTML = json[i].props;
+            sBig.src=json[i].show.img;
+            oIid.innerHTML = json[i].iid;
+
+        }
+    }
+
+
+})
+
+var waterfall = new WaterFall();
+waterfall.init();
+
+    </script>
 </body>
 </html>

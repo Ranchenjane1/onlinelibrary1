@@ -607,3 +607,19 @@ img {
   text-decoration: line-through;
   line-height: 40px;
   float: right; }
+
+#footer-2013 {
+  padding: 30px 0;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  border-top: 1px solid #eee; }
+
+#footer-2013 .links a {
+  font-size: 12px;
+  margin: 100px 10px;
+  color: #999;
+  text-decoration: none; }
+
+.copyright {
+  margin-top: 10px; }

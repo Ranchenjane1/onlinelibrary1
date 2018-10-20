@@ -33,12 +33,12 @@ $.extend(WaterFall.prototype,{
     renderPage:function(json1){
         // console.log(json);
         var json=json1.result.wall.list;
-        //console.log(json)
+        console.log(json)
         var html = "";
         for(var i = 0; i < json.length; i++){
           html += `<li class ="box">
           <a href="#">
-            <img src = "${json[i].show.img}" alt="">
+            <img src = "${json[i].show.img}" data-id="${i}" alt="">
             <p>${json[i].title}</p>
             <div><span>${json[i].price}</span>
             <b>${json[i].orgPrice}</b>
@@ -62,15 +62,15 @@ $.extend(WaterFall.prototype,{
         var scrollTop = $("html,body").scrollTop();
         var clientHeight = $("html")[0].clientHeight;
         var lastBox = this.main.children(":last");
-        console.log(scrollTop,clientHeight,lastBox);
-        console.log(lastBox)
+        // console.log(scrollTop,clientHeight,lastBox);
+        // console.log(lastBox)
         if(scrollTop + clientHeight > lastBox.offset().top){
             // 加载数据；
             if(this.loading){
                 return 0;
             }
             this.loading = true;
-            console.log("加载");
+            // console.log("加载");
             this.page++;
             this.loadJson()
             .done(function(res){
