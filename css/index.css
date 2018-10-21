@@ -1137,15 +1137,13 @@ img {
   left: 180px;
   width: 780px;
   height: 547px;
-  background-color: #fff;
   border-top: 1px solid #f60;
   border-left: 2px solid #f2f2f2;
   z-index: 13;
   overflow: hidden;
   -moz-box-shadow: 0px 2px 2px #f2f2f2;
   -webkit-box-shadow: 0px 2px 2px #f2f2f2;
-  box-shadow: 0px 2px 2px #f2f2f2;
-  display: none; }
+  box-shadow: 0px 2px 2px #f2f2f2; }
 
 .text_content {
   position: absolute;
@@ -1153,7 +1151,9 @@ img {
   left: 2px;
   width: 780px;
   z-index: 10;
-  height: 547px; }
+  height: 547px;
+  display: none;
+  background-color: #fff; }
 
 .content_left {
   float: left;
@@ -1220,12 +1220,6 @@ img {
 .content_right_img1 {
   width: 260px;
   height: 190px;
-  border: none;
-  overflow: hidden; }
-
-.content_right_img1 {
-  width: 260px;
-  height: 350px;
   border: none;
   overflow: hidden; }
 
@@ -3214,7 +3208,7 @@ img {
   margin-left: -60px;
   top: 100px;
   left: 115px;
-  display: block; }
+  display: none; }
 
 .f_floor li {
   width: 40px;

@@ -43,6 +43,7 @@ $.extend(WaterFall.prototype,{
             <div><span>${json[i].price}</span>
             <b>${json[i].orgPrice}</b>
             </div>
+            <strong>加入购物车</strong>
            </a>
             </li>
           `  
