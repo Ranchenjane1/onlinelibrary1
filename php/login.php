@@ -2,12 +2,12 @@
 
     header("Content-Type:text/html;charset=utf-8;");
     #1. 从前端拿来数据;
-    $username = @$_POST["username"];
-    $password = @$_POST["password"];
-    $emial=@$_POST["email"];
+    $username = @$_GET["username"];
+    $password = @$_GET["password"];
+    // $emial=@$_POST["email"];
     // $username = "yanghuaizhi";
     // $password = "123456";
-    if($username == "" || $password == ""|| $email ==""){
+    if($username == "" || $password == ""){
         die("参数不全");
     }
     #2. 把数据放入到数据库之中;
@@ -29,7 +29,7 @@
     $password = md5($password);
     while($row = mysql_fetch_array($result)){
         // echo json_encode($row);
-        if($row['password'] == $email && $row['email']){
+        if($row['password'] == $password){
             die("登陆成功");
         }
     }

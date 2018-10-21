@@ -11,21 +11,6 @@ function ajaxGet(url){
         }
     })
 }
-function ajaxPost(url,call){
-    return new Promise(function(success){
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST",url);
-        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=utf-8");
-        xhr.send(call);
-        xhr.onload = function(){
-            if(xhr.status == 200){
-                // xhr.response;
-                var res = xhr.response; 
-                success(res)
-            }
-        }
-    })
-}
 function jsonp(url,call){
     return  new Promise(function(success,failed){
         // 1. 全局函数;

@@ -27,8 +27,7 @@ oPassword.onblur=function(){
     if(regPwd.test(sPassword)){
         if(/\d/g.test(sPassword)){
             rate=0; 
-            rate++;
-                          
+            rate++;                         
         }
         if(/[a-zA-z]/g.test(sPassword)){
             rate++;               
@@ -100,8 +99,8 @@ oEmailCard.onfocus=function(){
 }
 var oBtn=$("btn");
 oBtn.onclick=function(){
-    var url="php/register.php";
-    ajaxPost(url,`username=${oUsername.value}&password=${oPassword.value}&email=${oEmail.value}`)
+    var url=`http://localhost:8080/proxy/localhost/php/register.php?username=${oUsername.value}&password=${oPassword.value}`;
+    ajaxGet(url)
     .then(function(res){
         console.log(res);
     });

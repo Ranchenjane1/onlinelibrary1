@@ -12,8 +12,6 @@ $(function(){
             })
         }
         
-        
-        
         var index = Math.floor(($(this).scrollTop()-450)/1100)
         $($(".f_floating li")[index]).css({
         	background : "#f60"

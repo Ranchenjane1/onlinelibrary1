@@ -82,10 +82,18 @@
                         </ul>
                     </div>
                     <div class="bannernav_right">
-                        <ul class="bannernav_right_content">
-                            <li class="bannernav_r_tit1"><a class="bannernav_r_item1" href="#">扶贫助农</a></li>
-                            <li class="bannernav_r_tit1"><a class="bannernav_r_item1" href="#">新零售</a></li>
-                        </ul>
+                        <div class="shopCar">
+                            <div class="empty">
+                                <span></span>
+                                <ul class="goodslist">
+                                    <!-- <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                        <strong></strong>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
            </div>
@@ -475,9 +483,13 @@
         </div>
     </div>
 <script src="script/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="script/jquery.cookie.js"></script>
+
 <script src="script/common.js"></script>
-<!-- <script src="script/waterfall.js"></script> -->
-<script src="script/waterfall2.js"></script>
+
+<!-- <script src="script/waterfall2.js"></script> -->
+<script src="script/shopcar.js"></script>
 <script>
 var olist = document.getElementById("wrap");
 //事件委托：
@@ -485,7 +497,7 @@ var olist = document.getElementById("wrap");
 olist.onclick = function(event){
     var imglist = document.querySelectorAll("#wrap img");
     var imgArr = Array.from(imglist);
-        console.log(imgArr)
+        //console.log(imgArr)
     var e =event || window.event;
     var target = e.target || e.srcElement;
     if(imgArr.indexOf(target)!=-1){
